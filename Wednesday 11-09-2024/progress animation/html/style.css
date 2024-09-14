@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.circle{
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 6px;
+    margin: 10px;
+    animation: pulse linear infinite .9s ;
+}
+@keyframes pulse {
+   from{
+    background-color: rgb(144, 131, 157);
+   } 
+   to{
+    background-color: rgb(248, 240, 240);
+   }
+}
+.progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tectangle{
+    width: 2em;
+    height: 2em;
+    border: 1px solid blue;
+    padding:7px;
+    margin: 10px;
+    animation: rotate ease-in-out infinite .5s;
+}
+.box1{
+    background-color: black;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: brown;
+}
+.box4{
+    background-color: yellow;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(-45deg);
+    }
+    to{
+        transform:rotate(45deg);
+    }
+}

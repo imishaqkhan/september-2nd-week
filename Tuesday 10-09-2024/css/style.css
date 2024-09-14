@@ -1,0 +1,132 @@
+h1{
+   padding: 10px;
+    margin-top: 200px;
+    margin-left: 200px;
+    animation: slidetoright 1s linear 0s 1  ;
+    transform: translate(-50px);
+   
+}
+@keyframes slidetoright {
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+button{
+    padding: 10px;
+    margin-top:50px;
+    margin-left: 200px;
+    border: 5px solid rgb(132, 69, 69);
+    border-radius:15px;
+    font-size: 2em;
+    font-weight: bold;
+    transition-property: transform;
+    transition-duration:0.3s;
+    transition-timing-function:linear;
+    transition-delay: 0s;
+}
+button:hover{
+  transform: translatey(-10px);
+}
+    
+
+
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animate--infinite{
+    animation-iteration-count: infinite;
+}
+.animate--fast{
+    animation-duration: 0.6s;
+}
+.animate--slow{
+    animation-duration: 3s;
+}
+.animate--delay-1s{
+    animation-delay: 1s;
+}
+
+
+h2,h3,h4{
+    padding: 10px;
+    margin-left: 200px;
+    margin-top: 100px;
+    animation: slideright 1s ease-in 0s l both;
+}
+@keyframes slideright {
+    from{
+        transform: translatex(-200px);
+    }
+    to{
+        transform: translatex(0px);
+    }
+}
+.slideright{
+    animation-name: slideright;
+    animation-timing-function: ease-in;
+}
+
+
+
+@keyframes slideleft {
+    from{
+        transform: translatex(200px);
+    }
+    to{
+        transform: translatex(0px);
+    }
+}
+.slideleft{
+    animation-name: slideleft;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0);
+    }
+   to{
+        transform: rotate(360deg);
+    }
+}
+
+.rotate{
+    animation-name: rotate;
+    animation-timing-function: linear;
+    transform-origin: top left;
+    
+}
+@keyframes bounce {
+    0%{
+        transform: translatey(0);
+    }
+    20%{
+        transform: translatey(-60px);
+    }
+
+    40%{
+        transform: translatey(0);
+    }
+    45%{
+        transform: translatey(-20px);
+    }
+    70%{
+        transform: translatey(0);
+    }
+    100%{
+        transform: translatey(-20px);
+    }
+    
+}
+.bounce{
+    animation: bounce 0.6s linear 2;
+    padding: 10px;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom:50px ;
+   
+}

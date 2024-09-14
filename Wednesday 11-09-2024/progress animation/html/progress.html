@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progres animation</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Hello Javascript!</h1>
+    <div class="container">
+        <div class="circle">1</div>
+        <div class="circle">1</div>
+        <div class="circle">1</div>
+        <div class="circle">1</div>
+    </div>
+    <div class="progress">
+        <div class="tectangle box1">a</div>
+        <div class="tectangle box2">b</div>
+        <div class="tectangle box3">c</div>
+        <div class="tectangle box4">d</div>
+    </div>
+   <script src="../script/script.js"></script>
+   <script>
+    const element= document.querySelector(".container")
+    console.log(element);
+    console.log(element.children);
+   // console.log(element.children[0].innerHTML);
+    for(let i=0; i < element.children.length; i++){
+        console.log(element.children[i].innerHTML);
+        
+    }
+    element.children[0].style.color="yellow"
+    console.log(element.firstElementChild);
+    
+   </script>
+</body>
+</html>
